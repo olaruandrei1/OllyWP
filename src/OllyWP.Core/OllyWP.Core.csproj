@@ -1,39 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-
-        <PackageId>OllyWP.Core</PackageId>
-        <Version>1.0.0</Version>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		
+		<PackageId>OllyWP.Core</PackageId>
+		<Version>1.0.1</Version>
 		<Authors>Andrei Olaru</Authors>
 		<Company>Andrei Olaru</Company>
 		<Description>Modern .NET library for Web Push Notifications with AES-128-GCM encryption, VAPID authentication, and fluent API. Supports batches and parallel processing.</Description>
 		<PackageTags>webpush;web push;web-push;push-notifications;vapid;notifications;fcm;apns;wns;olimp;ollywp</PackageTags>
-        <PackageProjectUrl>https://github.com/olaruandrei1/OllyWP.Core</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/olaruandrei1/OllyWP.Core</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/olaruandrei1/OllyWP.Core</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/olaruandrei1/OllyWP.Core</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>icon.png</PackageIcon>
-
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-
-		<PackageReleaseNotes>
-			Initial release - Fluent API, AES-128-GCM encryption, VAPID auth, batch processing, parallel execution.
-		</PackageReleaseNotes>
-
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageReleaseNotes>Initial release - Fluent API, AES-128-GCM encryption, VAPID auth, batch processing, parallel execution.</PackageReleaseNotes>
 		<NoWarn>$(NoWarn);CS1591</NoWarn>
-    </PropertyGroup>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\OllyWP.Core.Application\OllyWP.Core.Application.csproj" />
-        <ProjectReference Include="..\OllyWP.Core.Infrastructure\OllyWP.Core.Infrastructure.csproj" />
-    </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\OllyWP.Core.Application\OllyWP.Core.Application.csproj" />
+		<ProjectReference Include="..\OllyWP.Core.Infrastructure\OllyWP.Core.Infrastructure.csproj" />
+	</ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
-    </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="..\..\README.md" Pack="true" PackagePath="\" />

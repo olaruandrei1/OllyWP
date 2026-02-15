@@ -45,3 +45,11 @@ bld/
 # OS files
 .DS_Store
 Thumbs.db
+
+# NuGet publish scripts with API keys
+publish-nuget.bat
+publish-nuget.ps1
+
+# NuGet packages
+*.nupkg
+*.snupkg

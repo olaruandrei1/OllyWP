@@ -1,18 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
-    <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
+		<PackageId>OllyWP.Core.Infrastructure</PackageId>
+		<Version>1.0.1</Version>
+		<Authors>Andrei Olaru</Authors>
+		<Company>Andrei Olaru</Company>
+		<Description>OllyWP Infrastructure Layer - Crypto, HTTP, and platform implementations</Description>
+		<PackageTags>webpush;push-notifications;infrastructure;vapid;ollywp</PackageTags>
+		<PackageProjectUrl>https://github.com/olaruandrei1/OllyWP.Core</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/olaruandrei1/OllyWP.Core</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\OllyWP.Core.Application\OllyWP.Core.Application.csproj" />
-    </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\OllyWP.Core.Application\OllyWP.Core.Application.csproj" />
+	</ItemGroup>
 
-    <ItemGroup>
-      <PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
-    </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
+	</ItemGroup>
 </Project>
